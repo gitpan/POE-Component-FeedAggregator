@@ -1,6 +1,6 @@
 package POE::Component::FeedAggregator::Feed;
 BEGIN {
-  $POE::Component::FeedAggregator::Feed::VERSION = '0.001';
+  $POE::Component::FeedAggregator::Feed::VERSION = '0.002';
 }
 # ABSTRACT: A Feed specification for POE::Component::FeedAggregator
 
@@ -45,13 +45,6 @@ has max_headlines => (
 	default => sub { 100 },
 );
 
-has headline_as_id => (
-	isa => 'Bool',
-	is => 'ro',
-	required => 1,
-	default => sub { 1 },
-);
-
 1;
 __END__
 =pod
@@ -62,7 +55,7 @@ POE::Component::FeedAggregator::Feed - A Feed specification for POE::Component::
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 AUTHOR
 

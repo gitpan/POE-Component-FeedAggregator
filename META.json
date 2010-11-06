@@ -21,9 +21,9 @@
       },
       "runtime" : {
          "requires" : {
+            "IO::All" : 0,
             "MooseX::POE" : "0.208",
-            "POE::Component::Client::Feed" : 0,
-            "XML::Feed" : 0
+            "POE::Component::Client::Feed" : "0.003"
          }
       },
       "test" : {
@@ -33,7 +33,7 @@
          }
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "homepage" : "http://github.com/Getty/p5-poe-component-feedaggregator/tree",
       "repository" : {
@@ -42,7 +42,7 @@
          "web" : "http://github.com/Getty/p5-poe-component-feedaggregator/tree"
       }
    },
-   "version" : "0.001",
+   "version" : "0.002",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
@@ -237,7 +237,7 @@
       "zilla" : {
          "class" : "Dist::Zilla::Dist::Builder",
          "config" : {
-            "is_trial" : 1
+            "is_trial" : 0
          },
          "version" : "4.102342"
       }
