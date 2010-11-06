@@ -21,7 +21,7 @@ requires:
 resources:
   homepage: http://github.com/Getty/p5-poe-component-feedaggregator/tree
   repository: git://github.com/Getty/p5-poe-component-feedaggregator.git
-version: 0.003
+version: 0.004
 x_Dist_Zilla:
   plugins:
     -

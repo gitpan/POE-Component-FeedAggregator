@@ -1,6 +1,6 @@
 package POE::Component::FeedAggregator;
 BEGIN {
-  $POE::Component::FeedAggregator::VERSION = '0.003';
+  $POE::Component::FeedAggregator::VERSION = '0.004';
 }
 # ABSTRACT: Watch multiple feeds (Atom or RSS) for new headlines 
 
@@ -37,6 +37,7 @@ event feed_received => sub {
 	my ( $self, $kernel, @args ) = @_[ OBJECT, KERNEL, ARG0..$#_ ];
 	my $http_request = $args[0];
 	my $xml_feed = $args[1];
+	return if !(ref $xml_feed);
 	my $feed = $args[2];
 	my $cache_file = $self->tmpdir.'/'.$feed->name.'.feedcache';
 	my @entries;
@@ -96,7 +97,7 @@ POE::Component::FeedAggregator - Watch multiple feeds (Atom or RSS) for new head
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 
