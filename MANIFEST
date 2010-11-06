@@ -1,0 +1,15 @@
+Changes
+LICENSE
+MANIFEST
+META.json
+META.yml
+Makefile.PL
+README
+dist.ini
+lib/POE/Component/FeedAggregator.pm
+lib/POE/Component/FeedAggregator/Feed.pm
+t/00-load.t
+t/01-fetchtest.t
+t/data/atom.xml
+t/data/rss.xml
+t/release-pod-syntax.t
