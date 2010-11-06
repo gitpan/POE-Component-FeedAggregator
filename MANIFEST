@@ -11,6 +11,7 @@ lib/POE/Component/FeedAggregator/Feed.pm
 t/00-load.t
 t/01-fetchtest.t
 t/02-knowntest.t
+t/03-counttest.t
 t/data/atom.xml
 t/data/rss.xml
 t/release-pod-syntax.t
