@@ -14,6 +14,9 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: POE-Component-FeedAggregator
+no_index:
+  directory:
+    - t/lib
 requires:
   IO::All: 0
   MooseX::POE: 0.208
@@ -21,7 +24,7 @@ requires:
 resources:
   homepage: http://github.com/Getty/p5-poe-component-feedaggregator/tree
   repository: git://github.com/Getty/p5-poe-component-feedaggregator.git
-version: 0.004
+version: 0.005
 x_Dist_Zilla:
   plugins:
     -
@@ -156,6 +159,10 @@ x_Dist_Zilla:
           type: requires
       name: TestRequires
       version: 4.102342
+    -
+      class: Dist::Zilla::Plugin::MetaNoIndex
+      name: MetaNoIndex
+      version: 1.101550
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':InstallModules'

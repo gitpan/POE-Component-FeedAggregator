@@ -14,4 +14,5 @@ t/02-knowntest.t
 t/03-counttest.t
 t/data/atom.xml
 t/data/rss.xml
+t/lib/Test/PoCoFeAg/TestDaemon.pm
 t/release-pod-syntax.t

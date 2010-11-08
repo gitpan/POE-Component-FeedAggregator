@@ -1,5 +1,8 @@
 Revision history for POE-Component-FeedAggregator
 
+0.005     2010-11-08 23:30:37 Europe/Berlin
+	- Fixed tests (BinGOs++, kentnl++)
+
 0.004     2010-11-06 20:50:54 Europe/Berlin
 
 0.003     2010-11-06 19:42:15 Europe/Berlin

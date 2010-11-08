@@ -1,6 +1,6 @@
 package POE::Component::FeedAggregator;
 BEGIN {
-  $POE::Component::FeedAggregator::VERSION = '0.004';
+  $POE::Component::FeedAggregator::VERSION = '0.005';
 }
 # ABSTRACT: Watch multiple feeds (Atom or RSS) for new headlines 
 
@@ -97,7 +97,7 @@ POE::Component::FeedAggregator - Watch multiple feeds (Atom or RSS) for new head
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 

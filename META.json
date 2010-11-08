@@ -13,6 +13,11 @@
       "version" : "2"
    },
    "name" : "POE-Component-FeedAggregator",
+   "no_index" : {
+      "directory" : [
+         "t/lib"
+      ]
+   },
    "prereqs" : {
       "configure" : {
          "requires" : {
@@ -42,7 +47,7 @@
          "web" : "http://github.com/Getty/p5-poe-component-feedaggregator/tree"
       }
    },
-   "version" : "0.004",
+   "version" : "0.005",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
@@ -212,6 +217,11 @@
             },
             "name" : "TestRequires",
             "version" : "4.102342"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaNoIndex",
+            "name" : "MetaNoIndex",
+            "version" : "1.101550"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
