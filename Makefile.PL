@@ -23,11 +23,9 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'POE::Component::FeedAggregator',
   'PREREQ_PM' => {
-    'IO::All' => '0',
-    'MooseX::POE' => '0.208',
-    'POE::Component::Client::Feed' => '0.003'
+    'POE' => '0.38'
   },
-  'VERSION' => '0.005',
+  'VERSION' => '0.006',
   'test' => {
     'TESTS' => 't/*.t'
   }

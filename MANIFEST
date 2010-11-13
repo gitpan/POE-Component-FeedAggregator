@@ -12,6 +12,7 @@ t/00-load.t
 t/01-fetchtest.t
 t/02-knowntest.t
 t/03-counttest.t
+t/04-ignoretest.t
 t/data/atom.xml
 t/data/rss.xml
 t/lib/Test/PoCoFeAg/TestDaemon.pm

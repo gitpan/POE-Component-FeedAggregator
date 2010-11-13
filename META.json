@@ -26,9 +26,7 @@
       },
       "runtime" : {
          "requires" : {
-            "IO::All" : 0,
-            "MooseX::POE" : "0.208",
-            "POE::Component::Client::Feed" : "0.003"
+            "POE" : "0.38"
          }
       },
       "test" : {
@@ -47,7 +45,7 @@
          "web" : "http://github.com/Getty/p5-poe-component-feedaggregator/tree"
       }
    },
-   "version" : "0.005",
+   "version" : "0.006",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
@@ -159,6 +157,11 @@
             "class" : "Dist::Zilla::Plugin::GithubMeta",
             "name" : "@GETTY/GithubMeta",
             "version" : "0.10"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::LocalInstall",
+            "name" : "@GETTY/LocalInstall",
+            "version" : "0.001"
          },
          {
             "class" : "Dist::Zilla::Plugin::Prereqs",

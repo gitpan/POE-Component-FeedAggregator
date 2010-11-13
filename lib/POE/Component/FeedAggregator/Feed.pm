@@ -1,6 +1,6 @@
 package POE::Component::FeedAggregator::Feed;
 BEGIN {
-  $POE::Component::FeedAggregator::Feed::VERSION = '0.005';
+  $POE::Component::FeedAggregator::Feed::VERSION = '0.006';
 }
 # ABSTRACT: A Feed specification for POE::Component::FeedAggregator
 
@@ -22,6 +22,19 @@ has name => (
 	isa => 'Str',
 	is => 'ro',
 	required => 1,
+	default => sub {
+		my $self = shift;
+		my $name = $self->url;
+		$name =~ s/\W/_/g;
+		return $name;
+	},
+);
+
+has ignore_first => (
+	isa => 'Bool',
+	is => 'ro',
+	required => 1,
+	default => sub { 1 },
 );
 
 has delay => (
@@ -55,7 +68,7 @@ POE::Component::FeedAggregator::Feed - A Feed specification for POE::Component::
 
 =head1 VERSION
 
-version 0.005
+version 0.006
 
 =head1 AUTHOR
 
