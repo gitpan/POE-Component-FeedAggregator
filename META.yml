@@ -18,11 +18,13 @@ no_index:
   directory:
     - t/lib
 requires:
-  POE: 0.38
+  IO::All: 0
+  MooseX::POE: 0.208
+  POE::Component::Client::Feed: 0.003
 resources:
   homepage: http://github.com/Getty/p5-poe-component-feedaggregator/tree
   repository: git://github.com/Getty/p5-poe-component-feedaggregator.git
-version: 0.006
+version: 0.007
 x_Dist_Zilla:
   plugins:
     -

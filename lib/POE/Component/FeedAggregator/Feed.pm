@@ -1,6 +1,6 @@
 package POE::Component::FeedAggregator::Feed;
 BEGIN {
-  $POE::Component::FeedAggregator::Feed::VERSION = '0.006';
+  $POE::Component::FeedAggregator::Feed::VERSION = '0.007';
 }
 # ABSTRACT: A Feed specification for POE::Component::FeedAggregator
 
@@ -68,7 +68,7 @@ POE::Component::FeedAggregator::Feed - A Feed specification for POE::Component::
 
 =head1 VERSION
 
-version 0.006
+version 0.007
 
 =head1 AUTHOR
 
