@@ -1,6 +1,9 @@
 package POE::Component::FeedAggregator;
 BEGIN {
-  $POE::Component::FeedAggregator::VERSION = '0.007';
+  $POE::Component::FeedAggregator::AUTHORITY = 'cpan:GETTY';
+}
+BEGIN {
+  $POE::Component::FeedAggregator::VERSION = '0.008';
 }
 # ABSTRACT: Watch multiple feeds (Atom or RSS) for new headlines 
 
@@ -51,6 +54,7 @@ event feed_received => sub {
 	for my $entry ($xml_feed->entries) {
 		my $link = $entry->link;
 		my $title = $entry->title;
+		$link =~ s/ //g;
 		my $known = 0;
 		for (@entries) {
 			chomp;
@@ -100,7 +104,7 @@ POE::Component::FeedAggregator - Watch multiple feeds (Atom or RSS) for new head
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 SYNOPSIS
 

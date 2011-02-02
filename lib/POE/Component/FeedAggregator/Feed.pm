@@ -1,6 +1,9 @@
 package POE::Component::FeedAggregator::Feed;
 BEGIN {
-  $POE::Component::FeedAggregator::Feed::VERSION = '0.007';
+  $POE::Component::FeedAggregator::Feed::AUTHORITY = 'cpan:GETTY';
+}
+BEGIN {
+  $POE::Component::FeedAggregator::Feed::VERSION = '0.008';
 }
 # ABSTRACT: A Feed specification for POE::Component::FeedAggregator
 
@@ -68,7 +71,7 @@ POE::Component::FeedAggregator::Feed - A Feed specification for POE::Component::
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 AUTHOR
 
