@@ -47,7 +47,7 @@
          "web" : "http://github.com/Getty/p5-poe-component-feedaggregator/tree"
       }
    },
-   "version" : "0.008",
+   "version" : "0.900",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
