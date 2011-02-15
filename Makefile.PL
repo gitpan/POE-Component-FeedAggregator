@@ -27,7 +27,7 @@ my %WriteMakefileArgs = (
     'MooseX::POE' => '0.208',
     'POE::Component::Client::Feed' => '0.901'
   },
-  'VERSION' => '0.901',
+  'VERSION' => '0.902',
   'test' => {
     'TESTS' => 't/*.t'
   }

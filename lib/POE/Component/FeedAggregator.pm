@@ -3,7 +3,7 @@ BEGIN {
   $POE::Component::FeedAggregator::AUTHORITY = 'cpan:GETTY';
 }
 BEGIN {
-  $POE::Component::FeedAggregator::VERSION = '0.901';
+  $POE::Component::FeedAggregator::VERSION = '0.902';
 }
 # ABSTRACT: Watch multiple feeds (Atom or RSS) for new headlines 
 
@@ -64,7 +64,7 @@ event feed_received => sub {
 	my $http_request = $args[0];
 	my $feed = $args[2];
 	$self->logger->debug($self->logger_prefix.'Request feed '.$feed->url.' delayed with '.$feed->delay.' seconds') if $self->has_logger;
-	$kernel->delay( 'request_feed', $feed->delay, $feed );
+	$kernel->delay_add( 'request_feed', $feed->delay, $feed );
 	my $xml_feed = $args[1];
 	return if !(ref $xml_feed);
 	my $cache_file = $self->tmpdir.'/'.$feed->name.'.feedcache';
@@ -136,7 +136,7 @@ POE::Component::FeedAggregator - Watch multiple feeds (Atom or RSS) for new head
 
 =head1 VERSION
 
-version 0.901
+version 0.902
 
 =head1 SYNOPSIS
 
