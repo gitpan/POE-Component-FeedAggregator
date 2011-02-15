@@ -25,9 +25,9 @@ my %WriteMakefileArgs = (
   'PREREQ_PM' => {
     'IO::All' => '0',
     'MooseX::POE' => '0.208',
-    'POE::Component::Client::Feed' => '0.003'
+    'POE::Component::Client::Feed' => '0.901'
   },
-  'VERSION' => '0.900',
+  'VERSION' => '0.901',
   'test' => {
     'TESTS' => 't/*.t'
   }

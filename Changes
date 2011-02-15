@@ -1,5 +1,9 @@
 Revision history for POE-Component-FeedAggregator
 
+0.901     2011-02-15 06:55:27 Europe/Berlin
+	- Added logger docking capability
+	- Added http_agent attribute
+
 0.900     2011-02-08 02:29:24 Europe/Berlin
 	- Fixed a fundamental bug about breaking event chain on failing feed parsing
 
